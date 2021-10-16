@@ -1,21 +1,18 @@
 const express = require("express");
-const bodyParser = require("body-parser");
 const cors = require("cors");
 const db = require("./app/models");
 
 const app = express();
 
 var corsOptions = {
-    origin: "http://localhost:3000"
+    origin: "*"
 };
 
 app.use(cors(corsOptions));
 
-// parse requests of content-type - application/json
-app.use(bodyParser.json());
-
-// parse requests of content-type - application/x-www-form-urlencoded
-app.use(bodyParser.urlencoded({ extended: true }));
+// Data parsing
+app.use(express.json());
+app.use(express.urlencoded({ extended: false }));
 
 //mongodb connection 
 db.mongoose
@@ -31,13 +28,18 @@ db.mongoose
         process.exit();
     });
 
-// simple route
-app.get("/", (req, res) => {
-    res.json({ message: "Welcome to DPS challenge application" });
-});
-
 //importing all the routes
 require("./app/routes/contacts.routes")(app);
+
+if (process.env.NODE_ENV === 'production') {
+    app.use(express.static('client/build'));
+    app.get('*', (req, res) => {
+        res.sendfile(
+            path.join(__dirname = 'client/build/index.html')
+        );
+    }
+    )
+}
 
 // set port, listen for requests
 const PORT = process.env.PORT || 8080;
