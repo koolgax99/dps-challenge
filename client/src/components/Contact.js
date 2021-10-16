@@ -49,7 +49,7 @@ const Contact = props => {
         ContactDataService.remove(currentContact._id)
             .then(response => {
                 console.log(response.data);
-                props.history.push("/contacts");
+                props.history.push("/");
             })
             .catch(e => {
                 console.log(e);

@@ -11,12 +11,12 @@ function App() {
   return (
     <div>
       <nav className="navbar navbar-expand navbar-dark bg-dark justify-content-center">
-        <a href="/contacts" className="navbar-brand">
+        <a href="/" className="navbar-brand">
           DPS Challenge
         </a>
         <ul className="nav justify-content-center">
           <li className="nav-item">
-            <Link to={"/contacts"} className="nav-link">
+            <Link to={"/"} className="nav-link">
               Contacts
             </Link>
           </li>
@@ -29,7 +29,7 @@ function App() {
       </nav>
       <div className="container mt-3">
         <Switch>
-          <Route exact path={["/", "/contacts"]} component={ContactsList} />
+          <Route exact path="/" component={ContactsList} />
           <Route exact path="/add" component={AddContact} />
           <Route path="/contacts/:id" component={Contact} />
         </Switch>
