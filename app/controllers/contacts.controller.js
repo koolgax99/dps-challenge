@@ -6,10 +6,10 @@ exports.create = (req, res) => {
     if (!req.body.firstname) {
         res.status(400).send({ message: "First Name can not be empty!" });
         return;
-    }else if (!req.body.lastname) {
+    } else if (!req.body.lastname) {
         res.status(400).send({ message: "Last Name can not be empty!" });
         return;
-    }else if (!req.body.email) {
+    } else if (!req.body.email) {
         res.status(400).send({ message: "Email can not be empty!" });
         return;
     }
