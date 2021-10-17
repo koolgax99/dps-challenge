@@ -2,8 +2,6 @@
 
 [![forthebadge](https://forthebadge.com/images/badges/made-with-javascript.svg)](https://forthebadge.com)
 [![forthebadge](https://forthebadge.com/images/badges/open-source.svg)](https://forthebadge.com)
-[![forthebadge](https://forthebadge.com/images/badges/uses-npm.svg)](https://forthebadge.com)
-[![forthebadge](https://forthebadge.com/images/badges/uses-bootstrap.svg)](https://forthebadge.com)
 [![forthebadge](https://forthebadge.com/images/badges/uses-git.svg)](https://forthebadge.com)
 [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
 [![forthebadge](https://forthebadge.com/images/badges/fo-real.svg)](https://forthebadge.com)
@@ -106,21 +104,21 @@ Deployed using [Heroku](https://dps-challenge-nihar.herokuapp.com/)
 The landing page consists of 2 main parts- 'Contacts' and 'Add Contacts':
 On the Contacts page the user can choose whichever contact they want to view
 
-  <p align='center'><img src=screenshots\1.PNG>
+  <p align='center'><img src=screenshots\1.png>
 <p align="center">
 
 On the add page the user can fill the contact form with firstname, lastname, email and address. And then click on the Submit button is order to add a new contact to the DB.
 
-  <p align='center'><img src=screenshots\3.PNG>
+  <p align='center'><img src=screenshots\3.png>
 <p align="center">
   
 Once you click on any contact in the page, you can see all the details about that contact. And also you have an option to edit that contact.
   
-  <p align='center'><img src=screenshots\2.PNG>
+  <p align='center'><img src=screenshots\2.png>
 <p align="center">
   
 In the Edit contact page you can view the particular contact and then edit the fields of that contact. If you edit any option you have to click on the "Update" button to save those changes. By clicking on the "delete" button you can delete that particular contact.
-  <p align='center'><img src=screenshots\4.PNG>
+  <p align='center'><img src=screenshots\4.png>
 <p align="center">
   ***
   
